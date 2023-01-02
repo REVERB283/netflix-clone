@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomeScreen from "./pages/HomeScreen";
-import Login from "./pages/Login";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
 	const user = null;
@@ -11,7 +11,7 @@ function App() {
 		<div className="app">
 			<BrowserRouter>
 				{!user ? (
-					<Login />
+					<LandingPage />
 				) : (
 					<Routes>
 						<Route path="/" element={<HomeScreen />} />

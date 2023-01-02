@@ -1,13 +1,14 @@
-import React from "react";
 import "./Login.css";
 
 function Login() {
 	return (
 		<div className="login">
-			<div className="login__background">
-				<img className="login__logo" src={process.env.PUBLIC_URL + "/netflix-logo.png"} alt="logo" />
-				<button className="login__button">Sing In</button>
-			</div>
+			<form>
+				<h1>Sign In</h1>
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<button type="submit">Sign In</button>
+			</form>
 		</div>
 	);
 }
